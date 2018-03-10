@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Maratona Senai JS</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type"text/css" href="C:/ARQUIVOS/Senai/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+<body>
+    <div class="content-main">
+        <aside class="side-menu"> <!-- Esse ASIDE class é para todo bloco aside -->
+    
+            <div class="content-menu"> <!-- Essa DIV class é apenas para esse bloco da /div -->
+                    <img src="./img/bola.png" alt="bolinha" height="30">
+                    <span class="item-menu"> Esporte </span>
+            </div>
+
+
+            <div class="content-menu">
+                    <img src="./img/bola.png" alt="bolinha" height="30">
+                    <span class="item-menu"> Esporte </span> <!-- Esse SPAN class é para fazer o hover no CSS -->
+            </div>
+        </aside>
+        
+        
+        <section class="sport">   
+            <article class="content-sport">
+                <h1>Esporte</h1>
+                <p> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and 
+                    scrambled it to make a type specimen book. It has survived not only five centuries, 
+                    but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                    in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
+                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                
+            <div>
+                <button id="btn-images" onclick="openHelloWorld()">Galeria </button>
+                <p id="teste"> </p>
+            </div> 
+
+            </article>
+        </section>
+        
+        <form onsubmit="submitValue()">
+            <input type="email" name="email"/>
+            <button>Enviar</button>
+        </form>
+    </div>
+
+<script> 
+    function openHelloWorld () {
+    document.getElementById('teste').innerHTML = "Hello World";
+}
+
+function submitValue () {
+    alert('Os dados foram enviados');
+}
+</script>
+
+</body>
+
+</html>
